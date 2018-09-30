@@ -1,0 +1,31 @@
+/* pages/home/query.wxss */
+page{
+  background: #fdfdfd;
+}
+.query{
+  display: block;
+  margin-top: 100rpx;
+  padding: 0 20rpx;
+}
+.query-city{
+  display: flex;
+}
+.query-city image{
+  margin: 0 10rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.query-city input{
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.time-view{
+
+}
+.btn{
+  margin-top: 40rpx;
+  background: #ff9a14;
+}
+.btn::after{
+  border: none;
+}

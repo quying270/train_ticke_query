@@ -1,0 +1,19 @@
+<!--pages/home/query.wxml-->
+<view class='container'>
+  <form class='query' bindsubmit='query'>
+    <view class='query-city'>
+      <input name="from"/>
+        <image src='/images/tab.png'></image>
+      <input name="to"/>
+    </view>
+    <view class='time-view query-city'>
+      <picker mode="date" value="{{date}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindDateChange">
+        <input name="fromTime" value='{{date}}'></input>
+      </picker>
+      <picker mode="date" value="{{endTime}}" start="{{date?date:startDate}}" end="{{endDate}}" bindchange="endTimeChange">
+        <input name="toTime" value='{{endTime}}'></input>
+      </picker>
+    </view>
+    <button class='btn' form-type='submit'>查询</button>
+  </form>
+</view>

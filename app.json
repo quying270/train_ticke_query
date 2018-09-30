@@ -1,0 +1,6 @@
+{
+  "pages":[
+    "pages/home/query",
+    "pages/home/list"
+  ]
+}
